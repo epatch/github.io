@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+/*
+	ITD110 F01 Web Page Design I
+	Spring 2021
+    Final Personal Website
+    
+	Potter's Paint Studio Layout Stylesheet
+	Author: Emily Patch
+    Date:   28APR2021
+
+    Filename: potters.css
+
+*/
+
+/* HTML and Body Styles */
+
+html {
+	height: 100%;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  min-width: 640px;
+  width: 95%;
+  min-height: 100%;
+  font-family: Helvitica, Sego UI, Arial, sans-serif;
+
+}
+header, ul, nav, li, a {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Page Navbar Styles */
+nav.horizontal {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	text-align: center;
+}
+/* Row Styles */
+.row {
+  clear: both;
+}
+.row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* Horizontal Navigation List Styles */
+nav.horizontal > ul > li {
+  display: block;
+  width: 12.5%;
+  float: left;
+}
+nav.horizontal > ul > li > img {
+  display: block;
+  width: 12.5%;
+  float: left;
+  text-align: center;
+
+}
+nav.horizontal > ul > li a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+/* Grid Style */
+.item2 { grid-area: main; }
+.item3 { grid-area: social; }
+.item4 { grid-area: about; }
+.item5 { grid-area: cats; }
+.item6 { grid-area: news; }
+.item7 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'main main main main main main'
+    'social social social social social social'
+    'about about about cats cats cats'
+    'news news news news news news'
+    'footer footer footer footer footer footer';
+  grid-gap: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.grid-container > div {
+  padding: 0;
+  font-size: 24px;
+}
+.item2 {
+	margin: auto;
+}
+
+/* Button Style */
+.button {
+  background-color: red;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-family: Helvitica, Sego UI, Arial, sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* Slideshow Styles */
+
+* {box-sizing: border-box}
+body {font-family: Helvitica, Sego UI, Arial, sans-serif;}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* HR Styles */
+hr {
+  width: 90%;
+  border: 1px solid black;
+}
+
+/* Subscribe Style */
+body {font-family: Arial, Helvetica, sans-serif;}
+
+form {
+  border: none;
+}
+
+.container {
+  padding: 20px;
+  background-color: transparent;
+  text-align: center;
+}
+
+input[type=text], input[type=submit] {
+  width: 50%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+/* Track Styles */
+::cue {
+  font: 1.3em sans-serif;
+  color: white;
+  background: black;
+}
+/* Footer Styles */
+ul#foot{
+  width: 100%;
+  font-size: 0.9em;
+  padding: 15px;
+  text-align: center;
+}
+ul#foot li {
+  display:inline;
+}

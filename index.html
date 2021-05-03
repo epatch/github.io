@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!--
+	ITD110 F01 Web Page Design I
+	Spring 2021
+    Final Personal Website
+    
+	Potter's Paint Studio Home Page
+	Author: Emily Patch
+    Date:   28APR2021
+
+    Filename: index.html
+	-->
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="painted miniatures, commission painting, dungeons and dragons, warhammer, Potter's Paint Studio" />
+	<title> Potter's Paint Studio &#127912; HOME </title>
+	<link href="potters.css" rel="stylesheet" />
+	<link href="potters_colors.css" rel="stylesheet" />
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+</head>
+
+<body>
+	<header>
+		<nav class="horizontal">
+			<ul class="row">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="store.html">Store</a></li>
+				<li><img src="potters.png" alt="Potter's Paint Studio Logo" /></li>
+				<li><a href="affiliate_links.html">Affiliate Links</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="TableTop.jpg" alt="Tabletop Quality Miniatures" style="width:100%">
+  <div class="text">Tabletop Quality Miniatures</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="High_Quality.jpg" alt="High Quality Miniatures" style="width:100%">
+  <div class="text">High Quality Painted Miniatures</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="Commissions.jpg" alt="Painted Commissions" style="width:100%">
+  <div class="text">Commission Paintings</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="3d_print.jpg" alt="3D Printed Miniatures" style="width:100%">
+  <div class="text">3D Prints (Resin & FDM)</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="panels.jpg" alt="Panels & Tutorials" style="width:100%">
+  <div class="text">Tutorials & Lessons</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<div class="row">
+	<a href="https://www.facebook.com/"><img src="social_media.png" alt="Social Media Link" style="width:10%"></a>
+	</div>
+	<div class="row">
+  <h1>News from the Studio</h1>
+	</div>
+    <div class="card">
+      <h3>Tutorials</h3>
+      <h5>April 28, 2021</h5>
+      <div class="step by step.jpg" style="height:20%;"></div>
+      <p>Get tips & tricks!</p>
+      <p>This is the section where we'll post all our tutorials and step by step procedures.  We will probably update weekly unless otherwise specified. We encourage you to share our tutorials and try them out for yourself. Tag us on your posts in social media.</p>
+    </div>
+	
+<hr />
+	<h2>Testimonials</h2>
+   <ul id="testimonials">
+      <li>&ldquo;<em>Potter's Paint Studio</em> painted some of the best minis I've ever seen! They have a lot of helpful tips for getting started with painting or crafting or anything creative! Great unboxing videos, too!&rdquo;<br>
+            <br>
+            &mdash; Thomas C. (Richmond, VA)<br>
+      </li>
+      <li>&ldquo;The Studio has amazing creations! I love watching their videos and their 3D prints are such high quality.&rdquo;<br>
+            <br>
+            &mdash; Ken N. (Fredericksburg, VA)<br>
+      </li>
+      <li>&ldquo;<em>Potter's</em> always has tons of fun stuff to follow. Whether it's unboxing cool products, painting minis, or building tutorials for tabletop games, you can find it happening in the Studio.&rdquo;<br>
+            <br>
+            &mdash; Jen K. (Virginia Beach, VA)
+      </li>
+   </ul>
+<hr />
+
+<form action="/action_page.php">
+  <div class="container">
+  	<img src="mail.png" alt="Email Symbol" style="width:10%;">
+    <p>SIGN UP to SUBSCRIBE</p>
+    <p>to our newsletter!</p>
+  </div>
+
+  <div class="container">
+    <input type="text" placeholder="Email address" name="mail" required>
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Sign me Up!">
+  </div>
+</form><br>
+
+<footer>
+	<ul id="foot">
+		<li>&#169; Potter's Paint Studio 2021</li>
+		<li>|</li>
+		<li><a href="mailto:admin@potterspaintstudio.com">admin@potterspaintstudio.com</a></li>
+		<li>|</li>
+		<li>Richmond, Virginia</li>
+	</ul>  
+</footer>
+
+</body>
+</html>

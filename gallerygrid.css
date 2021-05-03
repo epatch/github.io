@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+/*
+	ITD110 F01 Web Page Design I
+	Spring 2021
+    Final Personal Website
+    
+	Potter's Paint Studio Layout Stylesheet
+	Author: Emily Patch
+    Date:   28APR2021
+
+    Filename: potters.css
+
+*/
+
+/* HTML and Body Styles */
+
+html {
+	height: 100%;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  min-width: 640px;
+  width: 95%;
+  min-height: 100%;
+  font-family: Helvitica, Sego UI, Arial, sans-serif;
+
+}
+header, ul, nav, li, a {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Page Navbar Styles */
+nav.horizontal {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	text-align: center;
+}
+/* Row Styles */
+.row {
+  clear: both;
+}
+.row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* Horizontal Navigation List Styles */
+nav.horizontal > ul > li {
+  display: block;
+  width: 12.5%;
+  float: left;
+}
+nav.horizontal > ul > li > img {
+  display: block;
+  width: 12.5%;
+  float: left;
+  text-align: center;
+
+}
+nav.horizontal > ul > li a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+/* Grid Style */
+.item2 { grid-area: main; }
+.item3 { grid-area: social; }
+.item4 { grid-area: buttons; }
+.item5 { grid-area: gallery; }
+.item6 { grid-area: news; }
+.item7 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'main main main main main main'
+    'social social social social social social'
+    'buttons gallery gallery gallery gallery gallery'
+    'news news news news news news'
+    'footer footer footer footer footer footer';
+  grid-gap: 0;
+  padding: 0;
+}
+.grid-container > div {
+  padding: 0;
+  font-size: 24px;
+}
+  
+/* Button Style */
+.button2 {
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 24px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  width: 75%;
+}
+
+.button2:hover {background-color: red;}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* HR Styles */
+hr {
+  width: 90%;
+  border: 1px solid black;
+}
+
+/* Subscribe Style */
+body {font-family: Arial, Helvetica, sans-serif;}
+
+form {
+  border: none;
+}
+
+.container {
+  padding: 20px;
+  background-color: transparent;
+  text-align: center;
+}
+
+input[type=text], input[type=submit] {
+  width: 50%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+/* Footer Styles */
+ul#foot{
+  width: 100%;
+  font-size: 0.9em;
+  padding: 15px;
+  text-align: center;
+}
+ul#foot li {
+  display:inline;
+}
+
+

@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/*
+	ITD110 F01 Web Page Design I
+	Spring 2021
+    Final Personal Website
+    
+	Potter's Paint Studio Layout Stylesheet
+	Author: Emily Patch
+    Date:   28APR2021
+
+    Filename: potters.css
+
+*/
+
+/* Window and Body Styles */
+html {
+   background-color: black;
+}
+
+body {
+   background-color: rgb(228,228,228); 
+}
+
+/* Horizontal Navigation List Colors */
+
+nav.horizontal ul li {
+   background-color: black;
+   color: white;
+}
+nav.horizontal a:link, nav.horizontal a:visited {
+   color: white;
+}
+nav.horizontal a:hover, nav.horizontal a:active {
+   color: red;
+}
+
+/* Footer Colors */
+ul#foot a:link, footer a:visited {
+	color: black;
+}
+ul#foot a:hover, footer a:active {
+	color: red;
+}
